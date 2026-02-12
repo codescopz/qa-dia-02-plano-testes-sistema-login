@@ -1,24 +1,57 @@
-Casos de Teste
+## DOCUMENTO DE CASOS DE TESTE
 
 Projeto: Sistema de Login e Recuperação de Senha
+Versão: 1.1
+Responsável: Natália Nascimento
+Data: 12/02/2026
+Ambiente de Teste:
 
+Sistema Web
 
-CT01 – Login com dados válidos
+Navegador: Google Chrome 120+
 
+Sistema Operacional: Windows 10
 
+Base de dados: Ambiente de homologação
+
+📊 MATRIZ DE RASTREABILIDADE
+Requisito	Casos de Teste
+RF01	CT-001
+RF02	CT-002
+RF03	CT-006
+RF04	CT-007, CT-008
+RF05	CT-003, CT-004, CT-005
+
+Cobertura: ✅ 100%
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🧪 CT-001 – Login com dados válidos
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ID: CT-001
 Requisito: RF01
-Prioridade: Alta
 Tipo: Funcional
+Prioridade: Alta
+Severidade: Crítica
+Status: Não Executado
 
-Pré-condição:
-Usuário já cadastrado no sistema.
+🎯 Objetivo
 
-Dados de teste:
+Validar que o sistema permite login com credenciais válidas.
+
+🔐 Pré-condição
+
+Usuário previamente cadastrado e ativo na base de dados.
+
+📥 Dados de Teste
+
 E-mail: usuario@teste.com
 
 Senha: 123456
 
-Passos:
+🔄 Passos
 
 Acessar a tela de login
 
@@ -28,29 +61,46 @@ Informar senha válida
 
 Clicar em “Entrar”
 
-Resultado esperado:
-O sistema deve autenticar o usuário e redirecionar para a página inicial.
+✅ Resultado Esperado
 
-Pós-condição:
-Usuário logado com sucesso.
+Usuário deve ser autenticado com sucesso e redirecionado para a página inicial.
 
+📎 Evidência Esperada
 
-CT02 – Login com senha incorreta
+Print da tela inicial após login.
 
+📌 Critério de Aprovação
 
+Redirecionamento correto e sessão iniciada.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🧪 CT-002 – Login com senha incorreta
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ID: CT-002
 Requisito: RF02
-Prioridade: Alta
 Tipo: Negativo
+Prioridade: Alta
+Severidade: Alta
+Status: Não Executado
 
-Pré-condição:
+🎯 Objetivo
+
+Validar que o sistema bloqueia acesso com senha incorreta.
+
+🔐 Pré-condição
+
 Usuário cadastrado.
 
-Dados de teste:
+📥 Dados de Teste
+
 E-mail: usuario@teste.com
 
 Senha: senha_errada
 
-Passos:
+🔄 Passos
 
 Acessar a tela de login
 
@@ -60,162 +110,213 @@ Informar senha incorreta
 
 Clicar em “Entrar”
 
-Resultado esperado:
-O sistema deve exibir a mensagem:
-“E-mail ou senha inválidos.”
-O acesso não deve ser permitido.
+✅ Resultado Esperado
 
+Exibir mensagem:
+"E-mail ou senha inválidos."
+Usuário não deve acessar o sistema.
 
-CT03 – Campo e-mail em branco
+📎 Evidência Esperada
 
+Print da mensagem de erro exibida.
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🧪 CT-003 – Campo e-mail em branco
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ID: CT-003
 Requisito: RF05
+Tipo: Validação
 Prioridade: Alta
-Tipo: Validação de campo
+Severidade: Média
+Status: Não Executado
 
-Passos:
+🎯 Objetivo
 
-Acessar a tela de login
+Validar obrigatoriedade do campo e-mail.
 
-Deixar o campo e-mail vazio
+🔄 Passos
+
+Acessar tela de login
+
+Deixar campo e-mail vazio
 
 Informar senha válida
 
 Clicar em “Entrar”
 
-Resultado esperado:
-O sistema deve informar que o campo e-mail é obrigatório.
+✅ Resultado Esperado
 
+Sistema deve exibir mensagem informando que o campo e-mail é obrigatório.
 
-CT04 – Campo senha em branco
+📎 Evidência Esperada
 
+Print da validação exibida abaixo do campo.
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🧪 CT-004 – Campo senha em branco
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ID: CT-004
 Requisito: RF05
+Tipo: Validação
 Prioridade: Alta
-Tipo: Validação de campo
+Severidade: Média
+Status: Não Executado
 
-Passos:
+🎯 Objetivo
 
-Acessar a tela de login
+Validar obrigatoriedade do campo senha.
+
+🔄 Passos
 
 Informar e-mail válido
 
-Deixar o campo senha vazio
+Deixar campo senha vazio
 
 Clicar em “Entrar”
 
-Resultado esperado:
-O sistema deve informar que o campo senha é obrigatório.
+✅ Resultado Esperado
 
+Sistema deve exibir mensagem informando que o campo senha é obrigatório.
 
-CT05 – E-mail em formato inválido
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+🧪 CT-005 – E-mail em formato inválido
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ID: CT-005
 Requisito: RF05
+Tipo: Validação
 Prioridade: Alta
-Tipo: Validação de campo
+Severidade: Média
+Status: Não Executado
 
-Dados de teste:
+🎯 Objetivo
+
+Validar formato correto do campo e-mail.
+
+📥 Dados de Teste
+
 E-mail: usuario_teste
 Senha: 123456
 
-Passos:
+🔄 Passos
 
-Acessar a tela de login
-
-Informar e-mail com formato inválido
+Informar e-mail inválido
 
 Informar senha válida
 
 Clicar em “Entrar”
 
-Resultado esperado:
-O sistema deve exibir mensagem informando que o formato do e-mail é inválido.
+✅ Resultado Esperado
 
+Sistema deve exibir mensagem informando formato inválido.
 
-CT06 – Bloqueio após 5 tentativas inválidas
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+🧪 CT-006 – Bloqueio após 5 tentativas inválidas
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ID: CT-006
 Requisito: RF03
-Prioridade: Alta
 Tipo: Segurança
+Prioridade: Alta
+Severidade: Crítica
+Status: Não Executado
 
-Pré-condição:
-Usuário cadastrado.
+🎯 Objetivo
 
-Passos:
+Garantir bloqueio da conta após múltiplas tentativas inválidas.
 
-Acessar a tela de login
-
-Informar e-mail válido
+🔄 Passos
 
 Informar senha incorreta
 
-Repetir o processo 5 vezes consecutivas
+Repetir processo 5 vezes consecutivas
 
-Resultado esperado:
-A conta deve ser bloqueada após a 5ª tentativa inválida.
-Mensagem exibida:
-“Conta bloqueada após múltiplas tentativas inválidas.”
+✅ Resultado Esperado
 
+Conta deve ser bloqueada após a 5ª tentativa.
 
-CT07 – Recuperação de senha com e-mail cadastrado
+Mensagem:
+"Conta bloqueada após múltiplas tentativas inválidas."
 
+📎 Evidência Esperada
 
+Print da mensagem de bloqueio.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🧪 CT-007 – Recuperação de senha com e-mail cadastrado
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ID: CT-007
 Requisito: RF04
-Prioridade: Média
 Tipo: Funcional
+Prioridade: Média
+Severidade: Alta
+Status: Não Executado
 
-Pré-condição:
-Usuário cadastrado.
+🎯 Objetivo
 
-Dados de teste:
+Validar envio de e-mail de recuperação.
+
+📥 Dados de Teste
+
 E-mail: usuario@teste.com
 
-Passos:
-
-Acessar a tela de login
+🔄 Passos
 
 Clicar em “Esqueci minha senha”
 
 Informar e-mail cadastrado
 
-Confirmar solicitação
+Confirmar
 
-Resultado esperado:
-O sistema deve exibir mensagem de confirmação.
-Um e-mail de recuperação deve ser enviado ao usuário.
+✅ Resultado Esperado
 
+Sistema deve exibir mensagem de confirmação.
+E-mail deve ser enviado ao usuário.
 
-CT08 – Recuperação com e-mail não cadastrado
+📎 Evidência Esperada
 
+Print da mensagem + confirmação de recebimento do e-mail.
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🧪 CT-008 – Recuperação com e-mail não cadastrado
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ID: CT-008
 Requisito: RF04
-Prioridade: Média
 Tipo: Negativo
+Prioridade: Média
+Severidade: Média
+Status: Não Executado
 
-Dados de teste:
+🎯 Objetivo
+
+Validar comportamento do sistema para e-mails inexistentes.
+
+📥 Dados de Teste
+
 E-mail: naoexiste@teste.com
 
-Passos:
-
-Acessar a tela de login
-
-Clicar em “Esqueci minha senha”
+🔄 Passos
 
 Informar e-mail não cadastrado
 
 Confirmar solicitação
 
-Resultado esperado:
-O sistema deve informar que o e-mail não está cadastrado.
+✅ Resultado Esperado
 
-Cobertura de Requisitos
-
-✔ RF01 → CT01
-✔ RF02 → CT02
-✔ RF03 → CT06
-✔ RF04 → CT07, CT08
-✔ RF05 → CT03, CT04, CT05
-
-Cobertura total: 100% dos requisitos mapeados.
+Sistema deve informar que o e-mail não está cadastrado.
