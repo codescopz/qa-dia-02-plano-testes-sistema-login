@@ -3,12 +3,12 @@
 Projeto: Sistema de Login e Recuperação de Senha
 
 Versão: 1.1
-
+#
 Responsável: Natália Nascimento
 
 Data: 12/02/2026
 
-
+#
 
 Ambiente de Teste:
 
