@@ -37,10 +37,15 @@ CT-001 – Login com dados válidos
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ID: CT-001
+
 Requisito: RF01
+
 Tipo: Funcional
+
 Prioridade: Alta
+
 Severidade: Crítica
+
 Status: Não Executado
 
 Objetivo
@@ -86,10 +91,15 @@ CT-002 – Login com senha incorreta
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ID: CT-002
+
 Requisito: RF02
+
 Tipo: Negativo
+
 Prioridade: Alta
+
 Severidade: Alta
+
 Status: Não Executado
 
 Objetivo
@@ -119,7 +129,9 @@ Clicar em “Entrar”
 Resultado Esperado
 
 Exibir mensagem:
+
 "E-mail ou senha inválidos."
+
 Usuário não deve acessar o sistema.
 
 Evidência Esperada
@@ -133,11 +145,17 @@ CT-003 – Campo e-mail em branco
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ID: CT-003
+
 Requisito: RF05
+
 Tipo: Validação
+
 Prioridade: Alta
+
 Severidade: Média
+
 Status: Não Executado
+
 
 Objetivo
 
@@ -168,10 +186,15 @@ CT-004 – Campo senha em branco
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ID: CT-004
+
 Requisito: RF05
+
 Tipo: Validação
+
 Prioridade: Alta
+
 Severidade: Média
+
 Status: Não Executado
 
 Objetivo
@@ -197,10 +220,15 @@ CT-005 – E-mail em formato inválido
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ID: CT-005
+
 Requisito: RF05
+
 Tipo: Validação
+
 Prioridade: Alta
+
 Severidade: Média
+
 Status: Não Executado
 
 Objetivo
@@ -231,10 +259,15 @@ CT-006 – Bloqueio após 5 tentativas inválidas
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ID: CT-006
+
 Requisito: RF03
+
 Tipo: Segurança
+
 Prioridade: Alta
+
 Severidade: Crítica
+
 Status: Não Executado
 
 Objetivo
@@ -252,6 +285,7 @@ Resultado Esperado
 Conta deve ser bloqueada após a 5ª tentativa.
 
 Mensagem:
+
 "Conta bloqueada após múltiplas tentativas inválidas."
 
 Evidência Esperada
@@ -265,10 +299,15 @@ CT-007 – Recuperação de senha com e-mail cadastrado
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ID: CT-007
+
 Requisito: RF04
+
 Tipo: Funcional
+
 Prioridade: Média
+
 Severidade: Alta
+
 Status: Não Executado
 
 Objetivo
@@ -290,6 +329,7 @@ Confirmar
 Resultado Esperado
 
 Sistema deve exibir mensagem de confirmação.
+
 E-mail deve ser enviado ao usuário.
 
 Evidência Esperada
@@ -303,15 +343,20 @@ CT-008 – Recuperação com e-mail não cadastrado
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ID: CT-008
+
 Requisito: RF04
+
 Tipo: Negativo
+
 Prioridade: Média
+
 Severidade: Média
+
 Status: Não Executado
 
 
 Objetivo
-#
+
 Validar comportamento do sistema para e-mails inexistentes.
 
 Dados de Teste
