@@ -19,7 +19,9 @@ Exibição correta de mensagens de erro
 Segurança básica contra acessos indevidos
 
 3. Escopo
-✅ Dentro do Escopo
+
+
+Dentro do Escopo
 
 Login com e-mail e senha
 
@@ -33,7 +35,7 @@ Bloqueio após 5 tentativas inválidas
 
 Recuperação de senha via e-mail
 
-❌ Fora do Escopo
+# Fora do Escopo
 
 Cadastro de usuário
 
